@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #5f2c82, #49a09d);
+  font-family: "Patrick Hand", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f5f5f5;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.container .heading h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.container .form {
+  margin: 20px auto;
+}
+
+.container .form input {
+  border: 1px solid transparent;
+  border-bottom: 3px solid #5f2c82;
+  background-color: transparent;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Patrick Hand", cursive;
+}
+
+.container .form input:focus {
+  border: 1px solid transparent;
+  border-bottom: 3px solid #5f2c82;
+  outline: none;
+}
+
+.container .form input::placeholder{
+  font-family: "Patrick Hand", cursive;
+  font-size: 20px;
+}
+
+.container .form .add {
+  padding: 10px;
+  background-color: #5f2c82;
+  margin: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #f5f5f5;
+  font-size: 20px;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Patrick Hand", cursive;
+  padding: 5px 10px;
+}
+
+ul li .delete {
+  color: #5f2c82;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: #5f2c82;
+}
+
+.nav-link {
+  font-size: 20px;
+  text-decoration: none;
+}
