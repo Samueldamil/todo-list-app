@@ -103,3 +103,9 @@ nav {
   font-size: 20px;
   text-decoration: none;
 }
+
+.time {
+  font-size: 0.8rem;
+  color: grey;
+  margin-left: 10px;
+}

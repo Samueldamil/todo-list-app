@@ -32,8 +32,13 @@ function App() {
   function addItem() {
     if (inputText.trim() === "")
       return;
+    const newTask = {
+      text: inputText,
+      completed: false,
+      timestamp: new Date().toLocaleString(),
+    };
     setItems((prevItems) => {
-      return [{text: inputText, completed: false}, ...prevItems];
+      return [newTask, ...prevItems];
     });
     setInputText("");
   }
@@ -79,6 +84,7 @@ function App() {
 	            {items.map((item, index) => (
 	              <li key={index} onClick={() => toggleComplete(index)} style={{textDecoration: item.completed ? "line-through" : "none", cursor: "pointer"}}>
 	                {item.text}
+			<span className="time">{item.timestamp}</span>
 	                <IconButton className="delete" onClick={(e) =>{ 
 		          e.stopPropagation();
          	          deleteItem(index); }}>
