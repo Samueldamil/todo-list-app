@@ -85,6 +85,55 @@ ul li .delete {
   font-weight: 500;
 }
 
+ul li .edit {
+  color: #5f2c82;
+  font-weight: 500;
+}
+
+.edit-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 250px;
+}
+
+.edit-input {
+  border: none;
+  border-bottom: 1px solid #5f2c82;
+  font-size: 16px;
+  margin-right: 8px;
+  outline: none;
+  padding: 6px 10px;
+  background-color: transparent;
+  font-family: "Patrick Hand", cursive;
+  width: 100px;
+  display: inline-block;
+}
+
+.save-edit {
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  background-color: #49a09d;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Patrick Hand", cursive;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-edit {
+  color: #333;
+  border: none;
+  padding: 6px 12px;
+  background-color: #cccccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Patrick Hand", cursive;
+  transition: background-color 0.3s ease;
+}
+
 footer {
   text-align: center;
   font-size: 20px;
